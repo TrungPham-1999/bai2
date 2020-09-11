@@ -1,0 +1,23 @@
+<html>
+<haed>
+    <script>
+
+        let array1 = new Array();
+        let count = parseInt(prompt("nhap so phan tu:"));
+        for (let i = 0; i<count; i++ ) {
+            array1[i] = parseInt(prompt("thu tu phan tu:" + i));
+        }
+        let max =0;
+        let index;
+        for (i=0; i<array1.length; i++){
+            if(array1[i]>max){
+                max = array1[i];
+                index = i;
+                
+            }
+        }
+        document.write("so lon nhat la: " +max + "o vi tri so: "+index);
+   
+    </script>
+</haed>
+</html>
